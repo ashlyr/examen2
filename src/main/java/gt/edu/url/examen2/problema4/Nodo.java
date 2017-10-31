@@ -7,17 +7,16 @@ public class Nodo <E> implements PositionalList<E> {
 	@Override
 	public Position<E> positionAtIndex(int i)
 	{
-	//public Nodo<T> devolverNodo(int pos){
+	
 		Position<E> aux=this.first();
         int cont=0;
          
         if(i<0 || i>=size()){
             System.out.println("La posicion insertada no es correcta");
         }else{
-            //recorremos
+            
             while(aux!=null){
                 if (i == cont){
-                    //Devuelvo aux, con esto salimos de la función
                     return aux; 
                 }
                  
@@ -25,11 +24,14 @@ public class Nodo <E> implements PositionalList<E> {
                 
                 cont++;
                  
+                
+                
+                
             }
         }
          
         return aux;
-         
+       
     }
 	@Override
 	public int size() {

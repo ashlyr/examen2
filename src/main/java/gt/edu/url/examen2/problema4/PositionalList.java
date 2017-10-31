@@ -16,7 +16,7 @@ public interface PositionalList<E> {
         
 	//Metodo a implementar
       
-	 Position<E> positionAtIndex(int i);
+	 Position<E> positionAtIndex(int i) throws IndexOutOfBoundsException;
 
      
         
